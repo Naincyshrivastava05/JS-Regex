@@ -9,4 +9,4 @@ function validatePin(pin){
       return false;
   }
 }
-validatePin("A400088"); 
+validatePin("400088B"); 
