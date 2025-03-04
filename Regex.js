@@ -1,5 +1,6 @@
-function validatePin(pin) {
-  const pinPattern = /^[1-9][0-9]{5}$/;
+function validatePin(pin){
+
+  const pinPattern = /^(?![A-Za-z])\d{3}\s?\d{3}(?![A-Za-z])$/;
   if (pinPattern.test(pin)) {
       console.log(`Valid PIN: ${pin}`);
       return true;
@@ -8,5 +9,4 @@ function validatePin(pin) {
       return false;
   }
 }
-
-validatePin("400088"); 
+validatePin("A400088"); 
